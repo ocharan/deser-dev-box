@@ -13,7 +13,7 @@ set_language() {
 install_postgres() {
   echo "Installing PostgreSQL"
   sudo apt-get update
-  sudo apt-get install -y postgresql postgresql-contrib
+  sudo apt-get install -y postgresql postgresql-contrib > /dev/null 2>&1
 
   # Set up vagrant user
   sudo -u postgres bash -c "psql -c \"CREATE USER vagrant WITH PASSWORD 'vagrant';\""
@@ -30,7 +30,7 @@ install_postgres() {
 # Install Redis
 install_redis() {
   echo "Installing Redis"
-  sudo apt-get install -y redis-server
+  sudo apt-get install -y redis-server > /dev/null 2>&1
 }
 
 # Install RVM
@@ -45,7 +45,7 @@ install_rvm() {
 # Install Matz Ruby Interpreter and common gems
 install_ruby() {
   echo 'Installing Ruby 2.6'
-  sudo apt-get install -y libxml2 libxml2-dev libxslt1-dev libpq-dev
+  sudo apt-get install -y libxml2 libxml2-dev libxslt1-dev libpq-dev > /dev/null 2>&1
   rvm install 2.6
   rvm use 2.6@global
   gem update --system --no-ri --no-rdoc
@@ -60,13 +60,13 @@ install_yarn() {
   echo 'Installing Yarn'
   curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
   echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-  sudo apt-get update && sudo apt-get install -y yarn
+  sudo apt-get update && sudo apt-get install -y yarn > /dev/null 2>&1
 }
 
 # Install Ngrok secure tunnel manager
 install_ngrok() {
   echo 'Installing Ngrok'
-  sudo apt install -y unzip
+  sudo apt install -y unzip > /dev/null 2>&1
   wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
   sudo unzip ngrok-stable-linux-amd64.zip -d /usr/local/bin
   rm -rf ngrok-stable-linux-amd64.zip
@@ -74,7 +74,7 @@ install_ngrok() {
 
 # Remove unused software
 clean_up() {
-  sudo apt -y autoremove && sudo apt autoclean
+  sudo apt -y autoremove && sudo apt autoclean > /dev/null 2>&1
 }
 
 setup() {

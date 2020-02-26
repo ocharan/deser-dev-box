@@ -4,15 +4,15 @@
 # Update system packages and install basic utilities
 update_box() {
   echo "Updating box software"
-  sudo apt update && sudo apt upgrade -y
-  sudo apt install -y tree git curl wget
+  sudo apt update && sudo apt upgrade -y > /dev/null 2>&1
+  sudo apt install -y tree git curl wget > /dev/null 2>&1
 }
 
 ###
 # Install Zsh and set it as the default shell
 install_zsh() {
   echo "Installing Zsh"
-  sudo apt install -y zsh
+  sudo apt install -y zsh > /dev/null 2>&1
 
   # Change shell to Zsh for the vagrant user
   sudo chsh -s /bin/zsh vagrant
