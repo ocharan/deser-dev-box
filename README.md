@@ -19,8 +19,8 @@ Archivos de configuración para construir automaticamente una maquina virtual co
 ## Software incluido
 
 * [Ubuntu Bionic][2]: Versión LTS.
-* Ruby y [RVM][3]: Versión 2.6.x.
-* [Rails][11]: Con las siguientes gemas:
+* [Ruby][11] y [RVM][3]: Versión 2.6.x.
+* [Rails][6]: Con las siguientes gemas:
   - RSpec
   - Cucumber
   - Mailcatcher
@@ -47,3 +47,4 @@ Archivos de configuración para construir automaticamente una maquina virtual co
 [8]: https://github.com/rails/webpacker
 [9]: http://ohmyz.sh/
 [10]: https://ngrok.com/
+[11]: https://www.ruby-lang.org/
