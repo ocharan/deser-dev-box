@@ -26,7 +26,7 @@ install_ohmyzsh() {
   cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
   # Change the Oh-My-Zsh! default configuration.
-  sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="blinks"/g' ~/.zshrc
+  sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="fishy"/g' ~/.zshrc
   sed -i 's/# CASE_SENSITIVE="true"/CASE_SENSITIVE="true"/g' ~/.zshrc
   sed -i 's/# COMPLETION_WAITING_DOTS="true"/COMPLETION_WAITING_DOTS="true"/g' ~/.zshrc
   sed -i 's/# DISABLE_UNTRACKED_FILES_DIRTY="true"/DISABLE_UNTRACKED_FILES_DIRTY="true"/g' ~/.zshrc
