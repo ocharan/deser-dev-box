@@ -38,7 +38,7 @@ Archivos de configuración para construir automaticamente una maquina virtual co
 ---
 [0]: https://www.vagrantup.com/downloads.html
 [1]: https://www.virtualbox.org/wiki/Downloads
-[2]: https://app.vagrantup.com/ubuntu/boxes/bionic64
+[2]: https://app.vagrantup.com/ubuntu/boxes/focal64
 [3]: https://rvm.io/
 [4]: https://www.postgresql.org/
 [5]: https://redis.io/
