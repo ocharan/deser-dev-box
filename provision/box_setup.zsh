@@ -44,14 +44,14 @@ install_rvm() {
 
 # Install Matz Ruby Interpreter and common gems
 install_ruby() {
-  echo 'Installing Ruby 2.6'
+  echo 'Installing Ruby 2.7'
   sudo apt-get install -y libxml2 libxml2-dev libxslt1-dev libpq-dev > /dev/null 2>&1
-  rvm install 2.6
-  rvm use 2.6@global
+  rvm install 2.7
+  rvm use 2.7@global
   gem update --system --no-ri --no-rdoc
   gem update --no-ri --no-rdoc
   gem install bundler rails rspec-rails cucumber-rails pg redis-rails webpacker mailcatcher pry-byebug --no-ri --no-rdoc
-  rvm use 2.6 --default
+  rvm use 2.7 --default
   rvm cleanup all
 }
 

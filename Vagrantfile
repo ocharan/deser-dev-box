@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 Vagrant.configure('2') do |config|
-  config.vm.box 	= 'ubuntu/bionic64' # 18.04 LTS Oficial
+  config.vm.box 	= 'ubuntu/focal64' # 20.04 LTS Oficial
   config.vm.hostname = 'deser-dev-box'
 
   # Provision box
