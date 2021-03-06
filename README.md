@@ -18,8 +18,8 @@ Archivos de configuración para construir automaticamente una maquina virtual co
 
 ## Software incluido
 
-* [Ubuntu Bionic][2]: Versión LTS.
-* [Ruby][11] y [RVM][3]: Versión 2.6.x.
+* [Ubuntu Focal][2]: Versión LTS.
+* [Ruby][11] y [RVM][3]: Versión 2.7.x.
 * [Rails][6]: Con las siguientes gemas:
   - RSpec
   - Cucumber
